@@ -8,6 +8,7 @@ def receber_mensagens(sock):
         print(data.decode())
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  UDP
     
 server_address = ('localhost', 20001)
 print ("Conectando %s porta %s" % server_address)

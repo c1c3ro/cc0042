@@ -21,7 +21,8 @@ def conexao_cliente(client, address):
     #Fechando o socket
     client.close()
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock = socket.socket(socket.AF_INET,  socket.SOCK_STREAM)
+# sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  UDP
     
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
